@@ -74,7 +74,7 @@ function Home() {
       header: 'Actions',
       cell: ({ row }) => (
         <>
-          <button onClick={() => handleEdit(row.original)}>Edit</button>
+          <button onClick={() => handleEdit(row.original)} >Edit</button>
           <button onClick={() => handleDelete(row.original.id)}>Delete</button>
         </>
       ),
@@ -290,7 +290,7 @@ function Home() {
       {/* tanstack and toolkitprovider and MUI data grid and AG grid and ANT design table*/}
 
       <h2 className='text-center'>This is to put data in tables of Tanstack</h2>
-      <table>
+      <table className="table table-bordered table-striped table-hover shadow">
         <thead>
           {table.getHeaderGroups().map((hg) => (    //table.getHeaderGroups() gives all the headers
             <tr key={hg.id}>
